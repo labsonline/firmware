@@ -1,0 +1,56 @@
+# Add 'repo' label to any root file changes
+repo:
+  - "*"
+
+# Add 'github-actions' label to any changes in the '.github' directory
+github-actions:
+  - .github/workflows/*
+  - .github/workflows/*/**
+  - .github/dependabot.yml
+  - .github/dependabot.yml/**
+
+# Add 'binaries' label to any changes in 'bin' directory
+# and any '.bin' files
+binaries:
+  - build/bin/*
+  - build/bin/*/**
+  - bin/*
+  - bin/*/**
+  - '*.bin'
+
+# Add 'build' label to any changes in the 'build' directory
+build:
+  - build/*
+  - build/*/**
+
+# Add 'firmware' label to any changes in the 'firmware' directory
+firmware:
+  - build/firmware/*
+  - build/firmware/*/**
+
+# Add 'image' label to any changes in the 'img' directory
+# and any '.img' files
+image:
+  - build/img/*
+  - build/img/*/**
+  - '*.img'
+
+# Add 'kernel' label to any changes in the 'kernel' directory
+# and any '.elf' files
+kernel:
+  - build/kernel/*
+  - build/kernel/*/**
+  - '*.elf'
+
+# Add 'configuration' label to any changes in the 'config' directory
+# and any '.conf' files
+configuration:
+  - config/*
+  - config/*/**
+  - "*.conf"
+  - "*.conf/**"
+
+# Add 'tools' label to any changes in the 'tools' directory
+tools:
+  - tools/*
+  - tools/*/**
